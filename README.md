@@ -135,9 +135,3 @@ I'm continuing to improve this project. Planned work:
 - [ ] **Set up CI** with GitHub Actions
 - [ ] **Deploy** the service and publish a live demo
 - [ ] **Add performance numbers** (response time with and without cache)
-
----
-
-## 📄 License
-
-MIT *(or your preferred license)*
