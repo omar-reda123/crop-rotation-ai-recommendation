@@ -25,7 +25,7 @@ Given a farm's coordinates, this service:
 | 🌱 **Soil Health** | Restore and protect soil quality |
 | ♻️ **Sustainability** | Reduce water use and environmental impact |
 
-Results are served through cached JSON endpoints so repeated requests for the same location are fast and don't waste API calls.
+Results are served through JSON endpoints so repeated requests for the same location are saved in backend database so, it is fast and don't waste API calls.
 
 ---
 
@@ -40,7 +40,6 @@ flowchart LR
     D --> F[Gemini API]
     E --> F
     F --> C
-    C --> G[(Cache)]
     C --> B
 ```
 
@@ -52,8 +51,7 @@ flowchart LR
 - **Framework:** FastAPI
 - **LLM:** Google Gemini API
 - **Data sources:** NASA climate, vegetation (NDVI), and soil data
-- **Data handling:** Pandas / NumPy *(adjust to what you used)*
-- **Caching:** *(in-memory / file-based / Redis, adjust to what you used)*
+- **Data handling:** Pandas / NumPy **
 - **Integration:** .NET backend + Angular frontend (built by teammates)
 
 ---
